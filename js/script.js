@@ -20,7 +20,7 @@ if(/^(\+88)?010[0-9]{3,}$/.test(phNum)){
           alert(`${phNum} is BTCL line number`);
           break;
         default:
-          alert('Invalid NUmbers ! Try again.');
+          alert('Invalid Numbers.!Try again.');
           break;
       }
   }
