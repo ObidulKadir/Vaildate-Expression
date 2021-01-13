@@ -30,7 +30,7 @@ let PostalCode = document.getElementById('postalCode');
 PostalCode.addEventListener('click', PostalCodeCheck);
 
 function PostalCodeCheck() {
-    let pc = prompt('Enter the  postal code you wanna check!!!');
+    let pc = prompt('Enter the  4-dgit postal code you wanna check!!!');
     if (pc === '0000') {
         alert('invaild postal code')
     }else{
@@ -53,9 +53,7 @@ function EmailChecker() {
             case (/([a-zA-Z0-9]){3,}@gmail[\.]com$/.test(Ec)):
                 alert(`${Ec} is  valid`);
                 break;
-            // case (/^([a-zA-Z0-9\.?]){3,}@[A-Za-z]{3,}[\.][a-zA-Z]{2,3}[\.][a-zA-Z]{2}$/.test(Ec)):
-            //     alert(`1 ${Ec} is  valid`);
-            //     break;
+            
             case (/^([a-zA-Z0-9\.?])+@([a-zA-Z0-9]\.?)+$/.test(Ec)):
                 alert(`${Ec} is valid`);  
                 break;
